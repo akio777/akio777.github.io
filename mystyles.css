@@ -1,0 +1,125 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Exo+2&display=swap');
+
+
+*{
+    font-family: 'Exo 2';
+}
+
+.body{
+    background-color: #fbdac8;
+    color:white;
+    display: flex;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.header {
+    background-color: #ff6666;
+    position: fixed;
+    height: 10%;
+    width: 100%;
+    /* margin-top: ; */
+}
+
+.icon{
+    color:#ff6666;
+}
+
+
+img{
+    border-radius: 50%; 
+    height: 250px;
+    width: 250px;
+    margin : auto;
+    position: fixed;
+    top : 50%;
+    left : 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+.info{
+    font-size: 20px;
+    /* position: fixed; */
+    text-align: center;
+    margin-top: 75%;
+    /* transform: translateX(-50%) translateY(-50%); */
+}
+
+
+.bigdot{
+    height : 500px;
+    width : 500px;
+    /* background-color: red; */
+    animation: colorchange 3s infinite;
+    -webkit-animation: colorchange 3s infinite;
+    border-radius: 100%;
+    margin : auto;
+    position: fixed;
+    top : 40%;
+    left : 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+@keyframes colorchange
+{
+  25%   {background: #fbdac8;}
+  50%  {background: #ff6666;}
+  25% {background: #ff8585;}
+}
+
+@-webkit-keyframes colorchange
+{
+  25%   {background: #fbdac8;}
+  50%  {background: #ff6666;}
+  25% {background: #ff8585;}
+}
+
+
+.smalldot{
+    height : 125px;
+    width : 125px;
+    background-color: rgb(255, 146, 146);
+    border-radius: 100%;
+    outline: none;
+    border: none;
+    margin : auto;
+    position: fixed;
+    cursor: pointer;
+    opacity: 0.5;
+    /* top : 50%;
+    left : 50%; */
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.smalldot:hover{
+    opacity: 1;
+    transition: 0.3s;
+    background-color: palevioletred;
+}
+
+
+.content{
+    background-color: silver;
+    height: 100px;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
